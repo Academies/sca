@@ -21,8 +21,8 @@ def main():
             play = get_string("Keep playing? (Y/N) ")
             if play == "Y":
                 break
-                print("Thanks for playing!")
             elif play == "N":
+                print("Thanks for playing!")
                 return
 
 if __name__ == '__main__':
