@@ -22,12 +22,15 @@ def main():
 
     # Fill dict and prints name and wordcount to screen
     for rapper in rappertexts:
-        word_set = fill_words(rapper)
+        words = fill_words(rapper)
+        print(words)
         rapper_name = rapper[:-4]
-        rappers[rapper_name] = word_set
+        rappers[rapper_name] = words
         line = "." * (40 - len(rapper_name))
-        print("%s%s\n\tword count: %s\n\tlargest word:%s" % (rapper_name.capitalize(), \
-              line, len(rappers[rapper_name]), max(rappers[rapper_name], key=len)))
+        print("%s%s\n\tWord Count: %s\n\tLargest Word: %s\n\tMost Used Word: %s" % \
+              (rapper_name.capitalize(), line, len(rappers[rapper_name]), \
+              max(rappers[rapper_name], key=len), max(rappers[rapper_name], \
+              key=rappers[rapper_name].get)))
 
 # Fills and returns a set of words for a given rapper file
 def fill_words(rapper):
@@ -36,7 +39,9 @@ def fill_words(rapper):
     with open("lyrics/" + rapper, "r") as f:
         words = f.read().split()
 
-    return set(words)
+    word_usage = {word: words.count(word) for word in set(words)}
+
+    return word_usage
 
 if __name__ == '__main__':
     main()
