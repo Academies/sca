@@ -38,7 +38,35 @@ If I wanted to make a brand new set called `grades` containing the grade levels 
 grades = {6, 7, 8, 9, 10, 11, 12}
 ```
 
+For more info on sets, [visit Python's website](https://docs.python.org/3/tutorial/datastructures.html#sets)!
+
 ### Dictionaries
+
+Dictionaries, or dicts for short, are a convenient data structure for whenever you desire a key-value relationship for your data. For example, think of what you probably know of as dictionary! There are entries for various words and related definitions. The word "pizza" may have the definition "a traditional Italian dish consisting of a yeasted flatbread typically topped with tomato sauce and cheese and baked in an oven." In this case "pizza" is the key, and the definition is the value.
+
+In python we can create an empty new dictionary as such:
+
+```
+words = dict()
+```
+
+or
+
+```
+words = {}
+```
+
+Note that we have to use `{}` when reffering to dictionaries, just like with sets! However, unless you created a set using the `set()` function, python will actually interpret `{}` to mean a dict!
+
+Let's say we want to add the word "happy" to our dict of words. We could do so by the following:
+
+```
+words["happy"] = "feeling or showing pleasure or contentment"
+```
+
+In this case "happy" is the key, accessed not unlike how we access a particular element in a list (exampleList[0], exampleList[1], ...). The definition "feeling or showing pleasure or contentment" is the value stored in that place. Thus, you can think of dictionaries as lists that are not limited to only having integer indices, but strings or data types as the key to access a particular value!
+
+For more info on dictionaries, [visit Python's website](https://docs.python.org/3/tutorial/datastructures.html#dictionaries)!
 
 ## Your Mission
 
@@ -57,3 +85,7 @@ You need to create the function that fills and returns a dictionary of words for
 ### 2. `examine_rapper()`
 
 One more function to create! This one takes a rappers dictionary of words used as a parameter. This function should prompt the user for a word to search in the rapper's lexicon. Then, if the word is used by the rapper, then the function should print the number of times the word is used. Otherwise, the function should inform the user that the word isn't used. No value to return here!
+
+## Checking Your Work
+
+When ready to check your work, type `check50 TODO:SPENCER/CREATE/CHECK` in the terminal and hit enter.
