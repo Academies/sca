@@ -13,7 +13,8 @@ For this summer coding camp, we'll be introducing ourselves to programming using
 
 **Thomas Lively**
 
-**Maria Zlotkova**
+**Maria Zlatkova** <br>
+[maria@cs50.harvard.edu](mailto:maria@cs50.harvard.edu)
 
 <!--
 ## Material Covered
