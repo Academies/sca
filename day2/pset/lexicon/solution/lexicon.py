@@ -21,7 +21,7 @@ def main():
     # Create a dict that has a rapper name and then set of words
     rappers = dict()
 
-    # Fill dict with rapper names as keys and dicts of words as values then print name, wordcount, etc. to screen
+    # Fill dict of words with value of frequency and prints name, wordcount, etc. to screen
     for rappertext in rappertexts:
         words = fill_words(rappertext)
         # Create rapper name from filefame (remove .txt and capitalize)
@@ -38,7 +38,6 @@ def main():
               max(rappers[rapper_name], key=len), max(rappers[rapper_name], \
               key=rappers[rapper_name].get)))
 
-    # TODO: Add comment
     while True:
         rapper = input("Choose a rapper to further examine (or type 'quit'): ")
 
@@ -49,13 +48,24 @@ def main():
         else:
             print("Invalid rapper!")
 
-# Fills and returns a dict cotaining a set of words as keys and use count as valuesn for a given rapper file
+# Fills and returns a set of words for a given rapper file
 def fill_words(rapper):
-    # TODO
+    words = []
 
-# Examines the number of times the rapper uses a user-inputted word and prints results to the screen
-def examine_rapper(rapperWords):
-    # TODO
+    with open("lyrics/" + rapper, "r") as f:
+        words = f.read().split()
+
+    word_usage = {word: words.count(word) for word in set(words)}
+
+    return word_usage
+
+# Examines the number of times the rapper uses a user-inputted word
+def examine_rapper(rapper, rappers):
+    word = input("Type a word the rapper uses: ")
+    if word in rappers[rapper]:
+        print("%s: %s uses by %s" % (word, rappers[rapper][word], rapper))
+    else:
+        print("No uses of %s!" % word)
 
 if __name__ == '__main__':
     main()

@@ -18,11 +18,11 @@ What's the key (as an integer from 1-26)? ABC
 Cyphertext: Hfnlp, yosnd!
 ```
 
-## Cryptography
+## The Vigenére Cypher
 
-Ever want to send a secret message? Cryptography is the process of converting plaintext (normal English) into cyphertext (encoded text).
+So the Caesar cypher isn't all that secure. There are only going to be 26 different possible keys a hacker needs to try ('a' doesn't even change the message!). We have to be able to do better. One slightly more secure cypher is the Vigenére cypher!
 
-The most simple of cyphers are ones where you add a value to each character. For example a + 2 &#10143; c! This is called a Caesar cypher. Of course, to interpret the cyphertext, we would need to know what number is being added, but we'll get back to that later!
+<!--Info on how vigenere works -->
 
 ## Implementing Vigenére
 

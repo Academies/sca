@@ -37,3 +37,23 @@ If I wanted to make a brand new set called `grades` containing the grade levels 
 ```
 grades = {6, 7, 8, 9, 10, 11, 12}
 ```
+
+### Dictionaries
+
+## Your Mission
+
+We're going to create a program that reads rap lyrics and determines how many unique words different rappers use! Although the program is partially created, it looks like there's more work to be done!
+
+You're going to tackle a few `TODO`'s in `lexicon.py`.
+
+### 0. Comment `TODO`'s
+
+In the main function there are a few missing comments that I need your help completing! Can you give me an assist?
+
+### 1. `fill_words()`
+
+You need to create the function that fills and returns a dictionary of words for a given rapper (given as an argument). The keys for this dictionary should be the words (but with no duplicates!) and the values should be the number of times the given word is repeated by the rapper. For example, accessing `words['the']` might give you the value 15, indicating that the rapper used the word 'the' 15 times.
+
+### 2. `examine_rapper()`
+
+One more function to create! This one takes a rappers dictionary of words used as a parameter. This function should prompt the user for a word to search in the rapper's lexicon. Then, if the word is used by the rapper, then the function should print the number of times the word is used. Otherwise, the function should inform the user that the word isn't used. No value to return here!
