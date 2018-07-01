@@ -32,7 +32,7 @@ def stalemate(board):
     return all([all([r.isalpha() for r in row]) for row in board])
 
 def main():
-    # Create list of 3 empty lists to represent Tic-Tac-Toe board
+    # Create list of lists to represent the Tic-Tac-Toe board
     board = [[] for _ in range(0,3)]
 
     # Populate board with the numbers 1-9
