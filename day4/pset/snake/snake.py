@@ -86,9 +86,8 @@ def draw_box(surface, color, position):
 
 # Check whether snake reached and ate apple
 def check_eat(snake, apple):
-    if snake.get_head_position() == apple.position:
-        snake.length += 1
-        apple.randomize()
+    # TODO if snake reached apple, increase snake length by 1
+    # and randomly place apple in new position
 
 class Snake(object):
     def __init__(self):
@@ -97,23 +96,16 @@ class Snake(object):
 
     # Method returns the position of the head/front of the snake
     def get_head_position(self):
-        return self.positions[0]
+        # TODO Return position of snake head
+        return (0, 0)
 
     # Method to initialize position, direction and length when game is restarted
     def restart(self):
-        self.length = 1
-        self.positions =  [((SCREEN_WIDTH / 2), (SCREEN_HEIGHT / 2))]
-        self.direction = random.choice([UP, DOWN, LEFT, RIGHT])
+        # TODO Set snake length, position and direction to initial values
 
     # Method to point snake in new direction, specified by point
     def point(self, point):
-        # If snake is moving left, and the new direction is right, do nothing
-        # since it can't automatically move in the opposite direction onto itself
-        # When the snake length is 1, moving in the oppsite direction is allowed
-        if self.length > 1 and (point[0] * -1, point[1] * -1) == self.direction:
-            return
-        else:
-            self.direction = point
+        # TODO Point snake in new direction
 
     # Method to move snake forward
     def move(self):
@@ -125,16 +117,7 @@ class Snake(object):
         new_position = (((cur_position[0] + (x * GRIDSIZE)) % SCREEN_WIDTH),
                         (cur_position[1] + (y * GRIDSIZE)) % SCREEN_HEIGHT)
 
-        # If snake tries to move in a grid where it is already located,
-        # and its length is greater than 2, the game is lost
-        if len(self.positions) > 2 and new_position in self.positions[2:]:
-            self.restart()
-        else:
-            self.positions.insert(0, new_position)
-            # As snake moves forward to take up new position,
-            # its tail should also move forward
-            if len(self.positions) > self.length:
-                self.positions.pop()
+        # TODO Move snake forward
 
     # Method to draw snake on surface
     def draw(self, surface):
@@ -149,8 +132,7 @@ class Apple(object):
 
     # Method to place apple in random location
     def randomize(self):
-        self.position = (random.randint(0, SCREEN_WIDTH - GRIDSIZE),
-                         random.randint(0, SCREEN_HEIGHT - GRIDSIZE))
+        #TODO Set apple's position to random location on screen
 
     # Method to draw apple
     def draw(self, surface):
