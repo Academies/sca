@@ -1,75 +1,78 @@
 """
-Tic-Tac-Toe with Pygame
+Tic-Tac-Toe
 Maria V Zlatkova
 CS50 at HSA, July 2018
-
-Adapted from https://github.com/msanatan
 """
 
-from helpers import *
+# Pretty prints 3 x 3 Tic-Tac-Toe board
+def print_board(board):
+    print('\n -----')
+    print('|' + board[0][0] + '|' + board[0][1] + '|' + board[0][2] + '|')
+    print(' -----')
+    print('|' + board[1][0] + '|' + board[1][1] + '|' + board[1][2] + '|')
+    print(' -----')
+    print('|' + board[2][0] + '|' + board[2][1] + '|' + board[2][2] + '|')
+    print(' -----\n')
 
-def winner(board, symbol):
-    # TODO Return True if there is a winning row, column or diagonal, else return False
-    return False
-
-def is_stalemate(board):
-    # TODO Return True if there is a stalemate, else return False
-    return False
-
-def update(game, cell_clicked):
-    # Update the board by filling in the clicked cell with the appropriate symbol
-
+# Determines whether game has been won
+def winner(board):
     for row in range(0,3):
-        for col in range(0,3):
-            key = row * 3 + col + 1
+        if ((board[row][0] == board[row][1] and board[row][0] == board[row][2]) or
+            (board[0][row] == board[1][row] and board[0][row] == board[2][row])):
+            return True
 
-            if (cell_clicked == key and not game['board'][row][col]['played']):
-                game['board'][row][col]['played'] = True
-                game['board'][row][col]['symbol'] = game['current_player']
-                return True
+    if ((board[0][0] == board[1][1] and board[0][0] == board[2][2]) or
+        (board[0][2] == board[1][1] and board[0][2] == board[2][0])):
+        return True
 
     return False
+
+# Determines whether game has resulted in a stalemate
+def stalemate(board):
+    return all([all([r.isalpha() for r in row]) for row in board])
 
 def main():
-    def initialize(starting_config):
-        return {
-                'board': initialize_board(SCREEN_SIZE, starting_config),
-                'current_player':  'X',
-                'win': False,
-                'stalemate': False,
-                'change_player': False
-                }
+    # Create list of lists to represent the Tic-Tac-Toe board
+    board = [[] for _ in range(0,3)]
 
-    if len(sys.argv) > 1:
-        game = initialize(sys.argv[1])
-    else:
-        game = initialize("")
+    # Populate board with the numbers 1-9
+    for row in range(0,3):
+        for col in range(0,3):
+            board[row].append(str(row * 3 + col + 1))
 
-    while True:
-        cell_clicked=0
-        for event in pygame.event.get():
-            if event.type == pygame.QUIT:
-                pygame.quit()
-                sys.exit()
-            elif event.type == MOUSEBUTTONDOWN:
-                cell_clicked = mouse_clicked(SCREEN_SIZE)
-                print(cell_clicked)
+    # Begin with player 1 and symbol X
+    X = True
 
-        keys_pressed = pygame.key.get_pressed()
-        if not (game['win'] or game['stalemate']):
-            game['change_player'] = update(game, cell_clicked)
+    while not winner(board) and not stalemate(board):
+        print_board(board)
+
+        if X:
+            print("Player 1")
         else:
-            # Reset the game by pressing space bar
-            if keys_pressed[pygame.K_SPACE]:
-                game = initialize()
+            print("Player 2")
 
-        # TODO
-        # Update game['win'] and game['stalemate']
+        # Get user choice
+        choice = int(input("Move: ")) - 1
 
-        render(screen, SCREEN_SIZE, game, clock)
+        # Ensure user selected number between 1-9
+        if (not board[choice / 3][choice % 3].isdigit()
+            or choice > 8 or choice < 0):
+            print("Please select a free slot.")
+        else:
+            # Set selected slot to X or O
+            if X:
+                board[choice / 3][choice % 3] = 'X'
+            else:
+                board[choice / 3][choice % 3] = 'O'
+            # It's the other player's turn
+            X = not X
 
-        # TODO
-        # If the last move didn't win/end the game, switch to the other player
+        if winner(board):
+            print_board(board)
+            print("Player " + str(int(X + 1)) + " wins!\n")
+        elif stalemate(board):
+            print_board(board)
+            print("Draw!")
 
 if __name__ == '__main__':
     main()
