@@ -89,19 +89,19 @@ def check_eat(snake, apple):
     # TODO if snake reached apple, increase snake length by 1
     # and randomly place apple in new position
 
-class Snake(object):
+class Snake():
     def __init__(self):
         self.restart()
         self.color = (0,0,0)
+
+    # Method to initialize position, direction and length when game is restarted
+    def restart(self):
+        # TODO Set snake length, position and direction to initial values
 
     # Method returns the position of the head/front of the snake
     def get_head_position(self):
         # TODO Return position of snake head
         return (0, 0)
-
-    # Method to initialize position, direction and length when game is restarted
-    def restart(self):
-        # TODO Set snake length, position and direction to initial values
 
     # Method to point snake in new direction, specified by point
     def point(self, point):
@@ -124,7 +124,7 @@ class Snake(object):
         for p in self.positions:
             draw_box(surface, self.color, p)
 
-class Apple(object):
+class Apple():
     def __init__(self):
         self.position = (0,0)
         self.color = (255,0,0)
