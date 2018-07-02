@@ -6,39 +6,39 @@ Implement a program that runs like the following examples:
 
 ```
 ~/workspace/ $ python caesar.py
-What's your message? Never gonna give you up, never gonna let you down
-What's the key (as an integer from 1-26)? 1
-Cyphertext: Ofwfs hpoob hjwf zpv vq, ofwfs hpoob mfu zpv epxo
+key: 1
+plaintext: Never gonna give you up, never gonna let you down
+ciphertext: Ofwfs hpoob hjwf zpv vq, ofwfs hpoob mfu zpv epxo
 ```
 
 ```
 ~/workspace/ $ python caesar.py
-What's your message? Let's meet at the zoo!
-What's the key (as an integer from 1-26)? 2
-Cyphertext: Ngv'u oggv cv vjg bqq!
+key: 2
+plaintext: Let's meet at the zoo!
+ciphertext: Ngv'u oggv cv vjg bqq!
 ```
 
 ## Cryptography
 
-Ever want to send a secret message? Cryptography is the process of converting plaintext (normal English) into cyphertext (encoded text).
+Ever want to send a secret message? Cryptography is the process of converting plaintext (normal English) into ciphertext (encoded text).
 
-The most simple of cyphers are ones where you add a value to each character. For example a + 2 &#10143; c! This is called a Caesar cypher. Of course, to interpret the cyphertext, we would need to know what number is being added, but we'll get back to that later!
+The most simple of ciphers are ones where you add a value to each character. For example a + 2 &#10143; c! This is called a Caesar cipher. Of course, to interpret the ciphertext, we would need to know what number is being added, but we'll get back to that later!
 
 ## Implementing Caesar
 
-Let's make a program that uses a Caesar cypher to encode text like the below:
+Let's make a program that uses a Caesar cipher to encode text like the below:
 
 ```
 ~/workspace/ $ python caesar.py
-What's your message? Let's meet at the zoo!
-What's the key (as an integer from 1-26)? 2
-Cyphertext: Ngv'u oggv cv vjg bqq!
+key: 2
+plaintext: Let's meet at the zoo!
+ciphertext: Ngv'u oggv cv vjg bqq!
 ```
 
 Be sure that your prompts look identical to this!
 
 Note some important details.
-1. It seems that spaces and punctuation are not to be affected by this cypher. We'll likely need to have some conditions to check for them!
+1. It seems that spaces and punctuation are not to be affected by this cipher. We'll likely need to have some conditions to check for them!
 
 2. What is z + 2 equal? It looks like we will have to figure out a way to wrap text around. It turns out that modulus operator (%) is quite useful for ensuring that we stay within the alphabet. To do this, we need to think a bit differently about letters.
 
@@ -58,4 +58,4 @@ Ignore the first minute or so, but this should help get you started.
 
 ## Submission
 
-Be sure to call this caesar.py and save in your google drive folder! 🙃
+To test, run `check50 cs50/2017/fall/caesar` in the terminal.

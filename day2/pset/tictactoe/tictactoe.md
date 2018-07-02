@@ -39,8 +39,8 @@ The above can be formatted to look like this:
 
 ```
 grades = [
-		  [89, 94, 89, 85, 91], 
-		  [86, 92, 88, 89, 90], 
+		  [89, 94, 89, 85, 91],
+		  [86, 92, 88, 89, 90],
 		  [90, 91, 86, 85, 90],
 		  [91, 93, 96, 89, 90]
 		 ]
@@ -55,7 +55,7 @@ And you can see how the above 2D list might correspond to a table like the follo
 | AP Psychology | 90 | 91 | 86 | 85 | 90 |
 | AP English    | 91 | 93 | 96 | 89 | 92 |
 
-The first element of `grades` here — `grades[0]` — is a list of numbers `[89, 94, 89, 85, 91]`. The first element of this new list is `grades[0][0] == 89` and 
+The first element of `grades` here — `grades[0]` — is a list of numbers `[89, 94, 89, 85, 91]`. The first element of this new list is `grades[0][0] == 89` and
 `grades[0][1] == 94`
 `grades[0][2] == 89`
 `grades[1][0] == 86`
@@ -74,9 +74,9 @@ for i in range(len(a)):
 
 The above snippet of code outputs:
 ```
-1 2 3 4 
-5 6 
-7 8 9 
+1 2 3 4
+5 6
+7 8 9
 ```
 
 Now that we are a bit more familiar with 2D lists, we'll use them to represent a 3 x 3 tic-tac-toe board!
