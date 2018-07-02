@@ -1,6 +1,6 @@
 # connect_four.py
 #
-# Implements a command-line version of the class game "Connect Four"
+# Implements a command-line version of the classic game "Connect Four"
 
 from cs50 import get_string
 

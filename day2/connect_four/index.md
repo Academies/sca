@@ -103,7 +103,7 @@ if the move was a winning move and `False` otherwise.
 This is the hardest part of this project, so we highly recommend that
 you work with your neighbors to figure out a working algorithm.
 
-### Handling Draws
+### 6. Handling Draws
 
 Unfortunately the code currently has no way of detecting when a game
 should be over because there are no more possible moves. Your final
