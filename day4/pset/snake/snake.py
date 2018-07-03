@@ -77,15 +77,15 @@ def main():
         # Delay snake movement for better gameplay
         clock.tick(FPS + snake.length / 3)
 
-# Draw each rectangle that makes up the snake or apple
 def draw_box(surface, color, position):
+    """Draw each rectangle that makes up the snake or apple"""
     pygame.draw.rect(surface,
                      color,
                      pygame.Rect((position[0], position[1]),
                                  (GRIDSIZE, GRIDSIZE)))
 
-# Check whether snake reached and ate apple
 def check_eat(snake, apple):
+    """ Checks whether snake reached and ate apple"""
     # TODO if snake reached apple, increase snake length by 1
     # and randomly place apple in new position
 

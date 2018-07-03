@@ -4,8 +4,8 @@ Maria V Zlatkova
 CS50 at HSA, July 2018
 """
 
-# Pretty prints 3 x 3 Tic-Tac-Toe board
 def print_board(board):
+    """ Pretty prints 3 x 3 Tic-Tac-Toe board """
     print('\n -----')
     print('|' + board[0][0] + '|' + board[0][1] + '|' + board[0][2] + '|')
     print(' -----')
@@ -14,8 +14,8 @@ def print_board(board):
     print('|' + board[2][0] + '|' + board[2][1] + '|' + board[2][2] + '|')
     print(' -----\n')
 
-# Determines whether game has been won
 def winner(board):
+    """ Determines whether game has been won """
     for row in range(0,3):
         if ((board[row][0] == board[row][1] and board[row][0] == board[row][2]) or
             (board[0][row] == board[1][row] and board[0][row] == board[2][row])):
@@ -27,8 +27,8 @@ def winner(board):
 
     return False
 
-# Determines whether game has resulted in a stalemate
 def stalemate(board):
+    """ Determines whether game has resulted in a stalemate """
     return all([all([r.isalpha() for r in row]) for row in board])
 
 def main():

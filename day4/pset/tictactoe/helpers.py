@@ -11,8 +11,7 @@ import sys
 import pygame
 from pygame.locals import *
 
-# SDL is the library which Pygame uses
-# We use SDL to put the game window at the screen's centre
+# SDL is the library which Pygame uses to put the window at the screen center
 os.environ['SDL_VIDEO_CENTERED'] = '1'
 SCREEN_SIZE = (800, 640)
 BLACK = (0, 0, 0)
@@ -115,8 +114,7 @@ def render(screen, screen_size, game, clock):
     clock.tick(60)
 
 def draw_lines(screen, screen_size):
-    # Draw vertical lines
-    # Lines go from top of screen to bottom of screen
+    # Draw vertical lines from top of screen to bottom of screen
     vertical_line_1 = int(screen_size[0] / 3) # lines mark 1/3 of the board
     pygame.draw.line(screen, BLACK, (vertical_line_1, 0), (vertical_line_1, screen_size[0]), 4)
     vertical_line_2 = vertical_line_1 * 2
@@ -130,11 +128,12 @@ def draw_lines(screen, screen_size):
 
 def draw_letter(screen, letter, colour, position_rect):
     player_choice = board_font.render(letter, False, colour)
-    # Fonts are draw to the top left of a Pygame rectangle
-    # This game would look better if they're drawn to the centre
-    # So after we generate a font image, create a special rectangle
-    # that's the center of the cell's rectangle. So the image will
-    # appear in the centre
+
+    """ Fonts are draw to the top left of a Pygame rectangle. To center them,
+    after generating font image, create a special rectangle
+    that's the center of the cell's rectangle
+    """
+
     choice_rect = player_choice.get_rect(center=position_rect.center)
     # Blit is Pygame's way of drawing an image to a rectangle
     screen.blit(player_choice, choice_rect)

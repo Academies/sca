@@ -9,15 +9,19 @@ Adapted from https://github.com/msanatan
 from helpers import *
 
 def winner(board, symbol):
-    # TODO Return True if there is a winning row, column or diagonal, else return False
+    """ TODO Return True if there is a winning row, column or diagonal,
+    else return False
+    """
     return False
 
 def is_stalemate(board):
-    # TODO Return True if there is a stalemate, else return False
+    """ TODO Return True if there is a stalemate, else return False """
     return False
 
 def update(game, cell_clicked):
-    # Update the board by filling in the clicked cell with the appropriate symbol
+    """ Update the board by filling in the clicked cell
+    with the appropriate symbol
+    """
 
     for row in range(0,3):
         for col in range(0,3):
