@@ -3,7 +3,7 @@
 FizzBuzz is a classic tech interview question. Your objective is to
 print out all the numbers from 1 to 100, but for numbers that are
 divisible by 3 you should print `"Fizz"` instead, and for numbers that
-are divisible by 5 you should print `"Buzz"` intead. For any number
+are divisible by 5 you should print `"Buzz"` instead. For any number
 divisible by both 3 and 5 you should print `"FizzBuzz"`.
 
 Here's what the first 10 lines of output should look like.
