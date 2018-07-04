@@ -1,5 +1,8 @@
-#!/usr/bin/python3
-
+"""
+Rap Lexicon
+Spencer L Tiberi
+CS50 at HSA, July 2018
+"""
 import os
 
 def main():
