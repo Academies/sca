@@ -1,0 +1,4 @@
+file: connect_four.py
+window:
+  - editor
+  - terminal
