@@ -13,7 +13,6 @@ Second number: 2.5
 
 ## Description
 
-
 Your goal is to create a calculator in Python! Be sure to support addition (using +), subtraction(using -), multiplication(using x), division(using /), and exponents(using ^)!
 
 This program should ask the user for a float, followed by an operation, followed by another float, then print the result.
