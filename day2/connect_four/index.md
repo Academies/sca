@@ -107,7 +107,8 @@ you work with your neighbors to figure out a working algorithm.
 
 Unfortunately the code currently has no way of detecting when a game
 should be over because there are no more possible moves. Your final
-task is to fix this in any way you see fit. Unlike the other tasks, this one will require you to make changes to the game loop in `main`.
+task is to fix this in any way you see fit. Unlike the other tasks,
+this one will require you to make changes to the game loop in `main`.
 
 
 ### Bonus challenges
