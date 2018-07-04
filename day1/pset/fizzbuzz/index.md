@@ -6,7 +6,7 @@ divisible by 3 you should print `"Fizz"` instead, and for numbers that
 are divisible by 5 you should print `"Buzz"` instead. For any number
 divisible by both 3 and 5 you should print `"FizzBuzz"`.
 
-Here's what the first 10 lines of output should look like.
+Here's what the first 15 lines of output should look like.
 
 ```
 1
@@ -34,4 +34,17 @@ FizzBuzz
 
 ### Testing
 
-Once you finish, check your solution by running `check50 fizzbuzz` in the terminal (TODO(tlively): implement check).
+Once you finish, run your code to make sure it works correctly.
+
+1. Does the beginning of the output match the example above?
+2. Does the end of the output look like this?
+
+   ```
+   Buzz
+   Fizz
+   97
+   98
+   Fizz
+   Buzz
+   ```
+
