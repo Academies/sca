@@ -12,7 +12,7 @@ DICTIONARY = "dictionary.txt"
 
 def main():
     if len(sys.argv) != 2:
-        print('Usage: python speller <text_file>')
+        print('Usage: python speller.py <text_file>')
         sys.exit(0)
 
     dict_file = DICTIONARY
