@@ -92,9 +92,9 @@ for line in file:
 For the above `test.txt` file that we just created and wrote to, the above loop and print statements would output:
 ```
 Hello, world!
-This is a new text file”
-and this is another line.” 
-Goodbye, world!”
+This is a new text file
+and this is another line. 
+Goodbye, world!
 ```
 
 #### Close the file
