@@ -116,7 +116,9 @@ We're going to create a program that can spellcheck bodies of text when given a 
 You're going to tackle a few `TODO`'s in `speller.py`.
 
 ### 0. `def __init__(self)` 
-In the init method we'll want to initializa the dictionary, and in order to do so, you should create the `words` instance variable and assign it to an empty set, where you will store the words contained in the dictionary. 
+In the init method we'll want to initializa the dictionary, and in order to do so, you should create the `words` instance variable and assign it to an empty set, where you will store the words contained in the dictionary.
+
+Don't forget to remove the `return None` line after you've created the instance variable and assigned it to the empty set! 
 
 ### 1. `def check(self, word)`
 In this method, you'll want to check whether a given word is present in the dictionary. In order to do so, you are passed the `word` argument, which itself is a string coming from the text that is being spellchecked. You should return `True` if `word` is contained in the set of words in the dictionary, accessible through the `words` instance variable which you should've create in the `__init__` method.
