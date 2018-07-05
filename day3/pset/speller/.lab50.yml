@@ -1,0 +1,6 @@
+file:
+  - dictionary.py
+  - speller.py
+window:
+  - editor
+  - terminal

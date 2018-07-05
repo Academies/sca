@@ -50,6 +50,8 @@ maria.withdraw(2000)
 print(maria.balance)
 ```
 
+### File I/O
+
 
 ## Your Mission
 
@@ -57,12 +59,16 @@ We're going to create a program that can spellcheck bodies of text when given a 
 
 You're going to tackle a few `TODO`'s in `speller.py`.
 
-### 0. 
+### 0. `def __init__(self)` 
 
 
+### 1. `def check(self, word)`
 
-### 1. 
 
+### 2. `def load(self, dictionary)`
+
+
+### 3. `def size(self)`
 
 
 ## Checking Your Work
