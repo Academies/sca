@@ -1,6 +1,13 @@
 file:
   - dictionary.py
   - speller.py
+  - texts/aca.txt
+  - texts/birdman.txt
+  - texts/consitution.txt
+  - texts/frankenstein.txt
+  - texts/her.txt
+  - texts/lalaland.txt
+  - texts/shakespeare.txt
 window:
   - editor
   - terminal
