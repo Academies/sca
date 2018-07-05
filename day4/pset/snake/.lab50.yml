@@ -1,0 +1,4 @@
+file: snake.py
+window:
+  - editor
+  - terminal
