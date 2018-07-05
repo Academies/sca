@@ -1,0 +1,6 @@
+file:
+  - tictactoe.py
+  - helpers.py
+window:
+  - editor
+  - terminal
