@@ -40,18 +40,74 @@ Here, we have defined the customer class, which is a blueprint for any future in
 
 ```
 maria = Customer("Maria Zlatkova", 3000.0)
+print(maria.balance) # Prints 3000
 ```
 
 Here, we created a new specific instance of the customer class and we placed it in the variable called `maria` and from now on, we will refer to this specific instance of the customer as `maria`.  Maria can also withdraw or deposit money from her bank account:
 
 ```
 maria.deposit(1500)
+print(maria.balance) # Prints 4500
 maria.withdraw(2000)
-print(maria.balance)
+print(maria.balance) # Prints 2500
 ```
 
 ### File I/O
 
+A file is a named location on disk that stores information. Files can be documents, images, tex files, and many more.
+
+When we want to work with a file in our Python scripts, we have the option to read the content of the file or write content to the file. However, before we can read from or write to a file we need to open it first. When we are done, the file needs to be closed, so that the file can be otherwise used and the resources that are tied with the file are freed.
+
+#### Open a file
+
+Python has a built-in function `open()` to open a file. This function returns a file object, which we can use throughout our code
+```
+f = open("test.txt")    # open file in current directory
+f = open("~/Desktop/python/test.txt")  # specifying full path
+```
+
+#### Read or write (perform operation)
+
+When opening the file, we have the option to either read 'r', write 'w' or append 'a' to the file. The default mode in which a file is opened is the read mode. which allows us to extract strings from the file.
+
+You can also open a file in write mode, which allows you to write to the file:
+
+```
+file = open(“test.txt”,”w”) 
+ 
+file.write(“Hello, world!”) 
+file.write(“This is a new text file”) 
+file.write(“and this is another line.”) 
+file.write(“Goodbye, world!”) 
+ 
+file.close() 
+```
+
+When we want to read all the lines from a file we can use a for loop:
+```
+file = open(“test.txt”, “r”) 
+for line in file: 
+	print(line)
+```
+For the above `test.txt` file that we just created and wrote to, the above loop and print statements would output:
+```
+Hello, world!
+This is a new text file”
+and this is another line.” 
+Goodbye, world!”
+```
+
+#### Close the file
+
+After you've opened a file and after you've performed some operations on it or using its contents, you should remember to always close the file you're working with:
+
+```
+f = open("test.txt")
+# perform file operations
+f.close()
+```
+
+For more details on File I/O, you can read [here](https://docs.python.org/3/tutorial/inputoutput.html), [here](https://www.programiz.com/python-programming/file-operation), and [here](http://www.pythonforbeginners.com/files/reading-and-writing-files-in-python).
 
 ## Your Mission
 
@@ -60,16 +116,28 @@ We're going to create a program that can spellcheck bodies of text when given a 
 You're going to tackle a few `TODO`'s in `speller.py`.
 
 ### 0. `def __init__(self)` 
-
+In the init method we'll want to initializa the dictionary, and in order to do so, you should create the `words` instance variable and assign it to an empty set, where you will store the words contained in the dictionary. 
 
 ### 1. `def check(self, word)`
+In this method, you'll want to check whether a given word is present in the dictionary. In order to do so, you are passed the `word` argument, which itself is a string coming from the text that is being spellchecked. You should return `True` if `word` is contained in the set of words in the dictionary, accessible through the `words` instance variable which you should've create in the `__init__` method.
 
+Hint: Open up `dictionary.txt` and take a look at all the words contained in the dictionary. All of the words should be lowercase, which means that you'll want to manipulate the `word` variable passed into this method to make it all lowercase as well before you check whether it is contained in the set of words.
 
 ### 2. `def load(self, dictionary)`
+In this method, you'll want to load the words from the dictionary file. You'll want to accomplish to following things:
+
+1. Open the dictionary file
+2. Go through all the lines of the file and for each line in the file, add the word in the set of words in the `words` instance variable
+
+   Hint: a `for` loop might be useful here to go through all the lines of the file. For each line, you'll want to add it to the `words` instance variable in order to make sure that our set contains all the words in the file. However, if you simple add the line to the set, that will add the string itself and the newline at the end of the string (since in `dictionary.txt`, there is one word per line followed by a newline). How can you get rid of this newline ( `\n` ) character? Take a look at Python's `rtstrip()` method [here](https://www.tutorialspoint.com/python/string_rstrip.htm) and [here](http://python-reference.readthedocs.io/en/latest/docs/str/rstrip.html)
+
+3. Close the file and return `True` when you are done working with the file
+
 
 
 ### 3. `def size(self)`
+In this method, you'll want to return the total size of the dictionary. 
 
+Hint: Given that all the words in the dictionary should we stored in the `words` instance variable, how might you get the total number of words in that set?
 
-## Checking Your Work
 
