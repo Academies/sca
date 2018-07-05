@@ -97,6 +97,7 @@ class Snake():
     # Method to initialize position, direction and length when game is restarted
     def restart(self):
         # TODO Set snake length, position and direction to initial values
+        print("restart unimplemented")
 
     # Method returns the position of the head/front of the snake
     def get_head_position(self):
@@ -106,6 +107,7 @@ class Snake():
     # Method to point snake in new direction, specified by point
     def point(self, point):
         # TODO Point snake in new direction
+        print("point unimplemented")
 
     # Method to move snake forward
     def move(self):
@@ -133,6 +135,7 @@ class Apple():
     # Method to place apple in random location
     def randomize(self):
         #TODO Set apple's position to random location on screen
+        print("randomize not implemented")
 
     # Method to draw apple
     def draw(self, surface):

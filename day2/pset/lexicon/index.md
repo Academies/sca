@@ -10,7 +10,7 @@ Create a program that compares the size of various rappers' lexicons.
 
 Who's the GOAT? Jay-Z? Kanye? Kendrick? Drake?
 
-<img src="goat.png" width="300">
+![goat](goat.png)
 
 One way to settle (or at least contribute to) the debate of the greatest rapper of all
 time is to compare the size of the vocabulary used by each rapper. [Some people have looked

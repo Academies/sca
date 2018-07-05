@@ -20,7 +20,7 @@ height: 5
 
 In the 1985 game **Super Mario Bros.**, Mario encounters two half-pyramids he must jump over! I decided to reminisce and play a little of the game myself and I took a screenshot!
 
-<img src="mariomore.png" width="400">
+![mariomore](mariomore.png)
 
 We're going to create a program that prints out this same shape. However, we're going to make the program ask for user input for the height of the half-pyramids. Then, we're gonna print out the shape!
 

@@ -10,7 +10,7 @@ Create a program that allows two people to play the game Tic-Tac-Toe.
 
 Welcome to the classic and simple game of [Tic-Tac-Toe](https://en.wikipedia.org/wiki/Tic-tac-toe), in which two players take turns strategically placing their chosen symbol (and X or an O) in a 3 x 3 grid. The game ends when one of the players manages to place their symbol in the three slots constituting a row, a column or diagonal, or when all the slots become filled up and no one wins, resulting in a stalemate.
 
-<img src="grid.png" width="300">
+![grid](grid.png)
 
 If you're familiar with the game, you'll know that there are strategies you can follow that ensure you always win the game (or that at least you [never lose!](https://www.quora.com/Is-there-a-way-to-never-lose-at-Tic-Tac-Toe])). You'll get enough time to practice such strategies when you've finished implementing our incomplete version of Tic-Tac-Toe, for which we've provided you with some initial code, but we're hoping you can help up finish it up! We're going to be using Python to complete the game! First, we're going to familiarize ourselves with some data structures, including **lists** and **dictionaries**.
 
@@ -119,7 +119,7 @@ In `tictactoe.py`, you'll see the function `def winner(board):`, which needs to 
 2. Check all columns to see if any one row has three identical symbols in it
 3. Check both diagonals to see if either of them has three identical symbols in it
 
-<img src="game.jpg" width="300">
+![game](game.jpg)
 
 If any row, column or diagonal contains three identical symbols, that means that the game was one, and you can return `True`. Otherwise, you should return `False`.
 
