@@ -142,4 +142,28 @@ In this method, you'll want to return the total size of the dictionary.
 
 Hint: Given that all the words in the dictionary should we stored in the `words` instance variable, how might you get the total number of words in that set?
 
+## Testing your program
 
+To run and test your program, you'll want to execute:
+
+```
+python speller.py <text>
+```
+
+Where `<text>` stands for the path to a text you might want to spellcheck. You have a few options to choose from:
+
+```
+texts/aca.txt
+texts/birdman.txt
+texts/constitution.txt
+texts/frankenstein.txt
+texts/her.txt
+texts/lalaland.txt
+texts/shakespeare.txt
+```
+
+So, a sample command might be:
+
+```
+python speller.py texts/her.txt
+```
