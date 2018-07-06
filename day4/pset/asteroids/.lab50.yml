@@ -1,0 +1,4 @@
+file: asteroids.py
+window:
+  - editor
+  - terminal
