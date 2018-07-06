@@ -1,14 +1,14 @@
 # Day 0
 
 ## Structure
-#### Morning Session (8:00 am - 11:30 am)
+#### Morning Session (9:00 am - 12:00 pm)
 Focus is more on computational thinking and starting to work with Python through user input!
 
-#### Lunch (11:30 am - 12:15 pm)
+#### Lunch (12:00 pm - 1:00 pm)
 
-#### Ice Breaker Activities (12:15 pm - 1:00 pm)
+#### Ice Breaker Activities (1:00 pm - 1:30 pm)
 
-#### Afternoon Session (1:00 pm - 4:00 pm)
+#### Afternoon Session (1:30 pm - 5:00 pm)
 Focus is on conditional statements and functions
 
 
