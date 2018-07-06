@@ -5,6 +5,7 @@ CS50 at HSA, July 2018
 """
 
 from dictionary import Dictionary
+import re
 import string
 import sys
 
