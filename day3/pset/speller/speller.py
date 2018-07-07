@@ -5,6 +5,7 @@ CS50 at HSA, July 2018
 """
 
 from dictionary import Dictionary
+import re
 import string
 import sys
 
@@ -38,7 +39,7 @@ def main():
         for word in line.split():
 
             # Remove punctuation from each word (i.e. commas)
-            word = word.translate(None, string.punctuation)
+            word = re.sub(r'[^\w\s]','', word)
 
             # ensure there are no non-alphabetical characters in word (i.e. numbers)
             if word.isalpha():
@@ -50,8 +51,6 @@ def main():
 
     print("Total number of words in text: " + str(len(words)))
     print("Number of misspelled words: " + str(len(misspelled)))
-    print("Misspelled words:")
-    print(misspelled)
 
 if __name__ == '__main__':
     main()

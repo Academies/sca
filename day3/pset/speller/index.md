@@ -141,3 +141,76 @@ In this method, you'll want to load the words from the dictionary file. You'll w
 In this method, you'll want to return the total size of the dictionary.
 
 Hint: Given that all the words in the dictionary should we stored in the `words` instance variable, how might you get the total number of words in that set?
+<<<<<<< HEAD
+=======
+
+## Testing your program
+
+To run and test your program, you'll want to execute:
+
+```
+python speller.py <text>
+```
+
+Where `<text>` stands for the path to a text you might want to spellcheck. You have a few options to choose from:
+
+```
+texts/aca.txt
+texts/birdman.txt
+texts/constitution.txt
+texts/frankenstein.txt
+texts/her.txt
+texts/lalaland.txt
+texts/shakespeare.txt
+```
+
+So, a sample command might be:
+
+```
+python speller.py texts/her.txt
+```
+
+For `aca.txt`, the expected output should be:
+```
+Total number of words in text: 362942
+Number of misspelled words: 16143
+```
+
+For `birdman.txt`, the expected output should be:
+```
+Total number of words in text: 21714
+Number of misspelled words: 1568
+```
+
+For `constitution.txt`, the expected output should be:
+```
+Total number of words in text: 7543
+Number of misspelled words: 50
+```
+
+For `frankenstein.txt`, the expected output should be:
+```
+Total number of words in text: 79602
+Number of misspelled words: 2430
+```
+
+For `her.txt`, the expected output should be:
+
+```
+Total number of words in text: 18356
+Number of misspelled words: 1218
+```
+
+For `lalaland.txt`, the expected output should be:
+```
+Total number of words in text: 17526
+Number of misspelled words: 1303
+```
+
+For `shakespeare.txt`, the expected output should be:
+```
+Total number of words in text: 899787
+Number of misspelled words: 45934
+```
+
+>>>>>>> 7cf7a7d44ced4b60b1bac913062bbfce48375ada

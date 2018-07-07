@@ -1,0 +1,7 @@
+file:
+  - asteroids.py
+  - assets/ship.png
+  - assets/asteroid.png
+window:
+  - editor
+  - terminal
