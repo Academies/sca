@@ -73,27 +73,27 @@ When opening the file, we have the option to either read 'r', write 'w' or appen
 You can also open a file in write mode, which allows you to write to the file:
 
 ```
-file = open(“test.txt”,”w”) 
- 
-file.write(“Hello, world!”) 
-file.write(“This is a new text file”) 
-file.write(“and this is another line.”) 
-file.write(“Goodbye, world!”) 
- 
-file.close() 
+file = open(“test.txt”,”w”)
+
+file.write(“Hello, world!”)
+file.write(“This is a new text file”)
+file.write(“and this is another line.”)
+file.write(“Goodbye, world!”)
+
+file.close()
 ```
 
 When we want to read all the lines from a file we can use a for loop:
 ```
-file = open(“test.txt”, “r”) 
-for line in file: 
+file = open(“test.txt”, “r”)
+for line in file:
 	print(line)
 ```
 For the above `test.txt` file that we just created and wrote to, the above loop and print statements would output:
 ```
 Hello, world!
 This is a new text file
-and this is another line. 
+and this is another line.
 Goodbye, world!
 ```
 
@@ -115,10 +115,10 @@ We're going to create a program that can spellcheck bodies of text when given a 
 
 You're going to tackle a few `TODO`'s in `speller.py`.
 
-### 0. `def __init__(self)` 
+### 0. `def __init__(self)`
 In the init method we'll want to initializa the dictionary, and in order to do so, you should create the `words` instance variable and assign it to an empty set, where you will store the words contained in the dictionary.
 
-Don't forget to remove the `return None` line after you've created the instance variable and assigned it to the empty set! 
+Don't forget to remove the `return None` line after you've created the instance variable and assigned it to the empty set!
 
 ### 1. `def check(self, word)`
 In this method, you'll want to check whether a given word is present in the dictionary. In order to do so, you are passed the `word` argument, which itself is a string coming from the text that is being spellchecked. You should return `True` if `word` is contained in the set of words in the dictionary, accessible through the `words` instance variable which you should've create in the `__init__` method.
@@ -138,8 +138,6 @@ In this method, you'll want to load the words from the dictionary file. You'll w
 
 
 ### 3. `def size(self)`
-In this method, you'll want to return the total size of the dictionary. 
+In this method, you'll want to return the total size of the dictionary.
 
 Hint: Given that all the words in the dictionary should we stored in the `words` instance variable, how might you get the total number of words in that set?
-
-

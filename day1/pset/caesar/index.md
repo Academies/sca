@@ -54,7 +54,7 @@ But note this: `B - A` will evaluate to **1**. Why? Because ASCII! `66 - 65 = 1`
 
 Ignore the first minute or so, but this should help get you started.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/5I7QqTTolHE?start=82" frameborder="0" gesture="media" allowfullscreen></iframe>
+[For extra help see Zamyla](https://www.youtube.com/embed/5I7QqTTolHE?start=82)
 
 ## Submission
 
