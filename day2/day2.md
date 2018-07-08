@@ -1,5 +1,22 @@
 # Day 2
 
-| Concepts | Practice |
-|--|--|
-| 0. Sets <br> 1. Dicts <br> 2. Nested Lists <br> 3. Functions With Parameters | **PSET 2:** <br> 0. Rap Lexicon <br> 1. Tic-Tac-Toe or Connect Four |
+### Structure
+#### Morning Session (9:00 am - 12:00 pm)
+
+#### Lunch (12:00 pm - 1:00 pm)
+
+#### Afternoon Session (1:00 pm - 5:00 pm)
+
+### Topics
+- Sets
+- Dictionaries
+- Nested Lists
+- Functions with Parameters
+
+### PSET
+- Rap Lexicon
+- Tic-Tac-Toe
+- Connect Four
+
+### Slides
+Located on [Google Slides.]()

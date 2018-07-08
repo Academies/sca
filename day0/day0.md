@@ -28,4 +28,4 @@ Focus is on conditional statements and functions.
 - [Calc](https://lab.cs50.io/spencertiberi/sca/master/day0/pset/calc)
 
 ### Slides
-Located on [Google Slides](https://docs.google.com/presentation/d/1cTCfZljhB02est1YWZlMh5ds1YS-VhQx2MytnHENvDA/edit?usp=sharing)
+Located on [Google Slides.](https://docs.google.com/presentation/d/1cTCfZljhB02est1YWZlMh5ds1YS-VhQx2MytnHENvDA/edit?usp=sharing)

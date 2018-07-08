@@ -11,7 +11,11 @@ Second number: 2.5
 12.5
 ```
 
-## Description
+## Background
+
+Ultimately, computers are machines that preform math operations (though, these operations can make magnificent things happen!). Thus, one simple program we can make is a calculator!
+
+## Your Mission
 
 Your goal is to create a calculator in Python! Be sure to support addition (using +), subtraction (using -), multiplication (using x), division (using /), and exponents (using ^)!
 

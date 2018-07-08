@@ -1,8 +1,15 @@
-# Ad Libs
+# Mad Libs
 
-Create a python program called **adlibs.py** that asks the user for various strings and creates an Ad Lib story like the output structure below dictates.
+## TL;DR
+Create a program that asks for user input for an mad lib story!
 
-## Output Structure
+## Background
+If you've never heard of Mad Libs, they are basically stories with a fill in the blank structure. The reader is to provide some nouns, adjectives, and adverbs in order to fill the blanks often to a hilarious effect! For more info on how Mad Libs work, [click here.](https://en.wikipedia.org/wiki/Mad_Libs)
+
+## Your Mission
+Create a python program called `madlibs.py` that asks the user for various strings and creates an Mad Lib story like the output structure below dictates.
+
+### Output Structure
 ```
 Enter a name: [name]
 Enter an adjective: [adjective 1]
