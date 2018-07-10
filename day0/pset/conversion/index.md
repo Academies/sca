@@ -12,7 +12,7 @@ We're going to play around with converting different units into one common unit!
 
 ### Problem 0
 
-In a file called `conversion0.py`, take in input from the user for hours and minutes. Then, we'll use a integer to represent to total number of minutes the user has entered after converting hours into minutes! Lastly, we'll print this value to the screen!
+In a file called `conversion0.py`, take in input from the user for hours and minutes. Then, we'll use an integer to represent to total number of minutes the user has entered after converting hours into minutes! Lastly, we'll print this value to the screen!
 
 ### Problem 1
 

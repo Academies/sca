@@ -5,6 +5,7 @@
 Create a program that imitates the behavior of a calculator like below:
 
 ```
+$ python calc.py
 First number: 5
 Operation: x
 Second number: 2.5
@@ -23,7 +24,7 @@ This program should ask the user for a float, followed by an operation, followed
 
 **Example Output:**
 ```
-~/workspace/ $ calc.py
+$ python calc.py
 First number: 34.5
 Operation: +
 Second number: 7.5
@@ -31,7 +32,7 @@ Second number: 7.5
 ```
 
 ```
-~/workspace/ $ calc.py
+$ python calc.py
 First number: 3
 Operation: ^
 Second number: 3
