@@ -1,9 +1,5 @@
 # Reverse
 
-## TL;DR
-
-Create a program that asks the user for a length of a shopping list, allows the user to fill that list, and then prints the contents of that list to the screen.
-
 ## Background
 
 To solidify for strings and indexing, we're going to create a program that reverses a string.
