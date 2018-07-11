@@ -1,0 +1,4 @@
+file: lexicon.py
+window:
+  - editor
+  - terminal
