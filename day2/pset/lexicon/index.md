@@ -4,9 +4,9 @@
 
 Create a program that compares the size of various rappers' lexicons.
 
-## Background
+### Background
 
-### Rapper's Delight
+#### Rapper's Delight
 
 Who's the GOAT? Jay-Z? Kanye? Kendrick? Drake?
 
@@ -16,7 +16,7 @@ One way to settle (or at least contribute to) the debate of the greatest rapper 
 time is to compare the size of the vocabulary used by each rapper. [Some people have looked
 into this subject quite a bit already](https://pudding.cool/2017/02/vocabulary/). We're going to do a little research ourselves using Python! First, we're going to have to look at **sets**.
 
-### Sets
+#### Sets
 
 In Python, the `set` data structure is like a list, but where duplicates are ignored. Let's say that you have a list of heights such as the one below:
 
@@ -40,7 +40,7 @@ grades = {6, 7, 8, 9, 10, 11, 12}
 
 For more info on sets, [visit Python's website](https://docs.python.org/3/tutorial/datastructures.html#sets)!
 
-### Dictionaries
+#### Dictionaries
 
 Dictionaries, or dicts for short, are a convenient data structure for whenever you desire a key-value relationship for your data. For example, think of what you probably know of as dictionary! There are entries for various words and related definitions. The word "pizza" may have the definition "a traditional Italian dish consisting of a yeasted flatbread typically topped with tomato sauce and cheese and baked in an oven." In this case "pizza" is the key, and the definition is the value.
 
@@ -68,23 +68,23 @@ In this case "happy" is the key, accessed not unlike how we access a particular 
 
 For more info on dictionaries, [visit Python's website](https://docs.python.org/3/tutorial/datastructures.html#dictionaries)!
 
-## Your Mission
+### Your Mission
 
 We're going to create a program that reads rap lyrics and determines how many unique words different rappers use! Although the program is partially created, it looks like there's more work to be done!
 
 You're going to tackle a few `TODO`'s in `lexicon.py`.
 
-### 0. Comment `TODO`'s
+#### 0. Comment `TODO`'s
 
-In the main function there are a few missing comments that I need your help completing! Can you give me an assist?
+In the main function there are a few missing comments that I need your help completing! Can you give me an assist? Let me know what I was doing! Eek!
 
-### 1. `fill_words()`
+#### 1. `fill_words()`
 
 You need to create the function that fills and returns a dictionary of words for a given rapper (given as an argument). The keys for this dictionary should be the words (but with no duplicates!) and the values should be the number of times the given word is repeated by the rapper.
 
 For example, accessing `words['the']` might give you the value 15, indicating that the rapper used the word 'the' 15 times.
 
-### 2. `examine_rapper()`
+#### 2. `examine_rapper()`
 
 One more function to create! This one takes a rappers dictionary of words used as a parameter. This function should:
 - Prompt the user for a word to search in the rapper's lexicon.
