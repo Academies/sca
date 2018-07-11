@@ -10,4 +10,4 @@ You want to calculate the final score for a team that has just participated in a
 
 ### Your Mission
 
-Building on the code in quidditch.py, implement a function that takes two variables as input — an int indicating the number of times the team got the Quaffle through the other team's hoops, and a bool indicating whether or not they caught the snitch -- and returns that team's final score (what would the return type be?).
+Building on the code in quidditch.py, implement a function that takes two variables as input — an int indicating the number of times the team got the Quaffle through the other team's hoops, and an int indicating whether or not they caught the snitch -- and returns that team's final score (what would the return type be?).
