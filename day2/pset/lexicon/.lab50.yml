@@ -1,5 +1,7 @@
 file:
   - lexicon.py
+
+folder:
   - lyrics
 
 window:
