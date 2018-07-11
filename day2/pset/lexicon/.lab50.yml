@@ -8,9 +8,6 @@ file:
   - lyrics/kendrick.txt
   - lyrics/outkast.txt
 
-dir:
-  - lyrics
-
 window:
   - editor
   - terminal
