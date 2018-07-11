@@ -46,15 +46,15 @@ def main():
         choice = int(input("Move: ")) - 1
 
         # Ensure user selected number between 1-9
-        if (not board[choice / 3][choice % 3].isdigit()
+        if (not board[choice // 3][choice % 3].isdigit()
             or choice > 8 or choice < 0):
             print("Please select a free slot.")
         else:
             # Set selected slot to X or O
             if X:
-                board[choice / 3][choice % 3] = 'X'
+                board[choice // 3][choice % 3] = 'X'
             else:
-                board[choice / 3][choice % 3] = 'O'
+                board[choice // 3][choice % 3] = 'O'
             # It's the other player's turn
             X = not X
 

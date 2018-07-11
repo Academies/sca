@@ -1,11 +1,11 @@
-'''
+"""
 Pong using Pygame
 Spencer L Tiberi
 HSA SCA, July 2018
 
+"""
 
-'''
-#imports
+# imports
 import pygame
 import sys
 import time
@@ -38,12 +38,15 @@ def main():
         leftPaddle.draw()
         rightPaddle.draw()
         ball.move()
+
+        # Bounce of floor and ceiling, paddle, or reset
         if ball.y <= 0 or ball.y >= SCREEN_HEIGHT:
             ball.dy = -ball.dy
         if ball.touching(leftPaddle) or ball.touching(rightPaddle):
             ball.dx = -ball.dx
         if ball.x <= 0:
             ball.reset()
+
         elif ball.x >= SCREEN_WIDTH:
             ball.reset()
 
