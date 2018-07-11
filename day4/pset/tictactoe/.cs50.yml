@@ -1,6 +1,7 @@
-file:
-  - helpers.py
-  - tictactoe.py
-window:
-  - editor
-  - terminal
+lab50:
+  file:
+    - helpers.py
+    - tictactoe.py
+  window:
+    - editor
+    - terminal

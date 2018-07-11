@@ -1,4 +1,5 @@
-file: snake.py
-window:
-  - editor
-  - terminal
+lab50:
+  file: snake.py
+  window:
+    - editor
+    - terminal

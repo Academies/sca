@@ -1,4 +1,5 @@
-file: connect_four.py
-window:
-  - editor
-  - terminal
+lab50:
+  file: connect_four.py
+  window:
+    - editor
+    - terminal

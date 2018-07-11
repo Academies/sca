@@ -1,6 +1,6 @@
-file:
-  - quidditch.py
-
-window:
-  - editor
-  - terminal
+lab50:
+  file:
+    - quidditch.py
+  window:
+    - editor
+    - terminal
