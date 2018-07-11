@@ -141,8 +141,6 @@ In this method, you'll want to load the words from the dictionary file. You'll w
 In this method, you'll want to return the total size of the dictionary.
 
 Hint: Given that all the words in the dictionary should we stored in the `words` instance variable, how might you get the total number of words in that set?
-<<<<<<< HEAD
-=======
 
 ## Testing your program
 
@@ -212,5 +210,3 @@ For `shakespeare.txt`, the expected output should be:
 Total number of words in text: 899787
 Number of misspelled words: 45934
 ```
-
->>>>>>> 7cf7a7d44ced4b60b1bac913062bbfce48375ada
