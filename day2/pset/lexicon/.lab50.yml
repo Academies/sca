@@ -1,4 +1,7 @@
-file: lexicon.py
+file:
+  - lexicon.py
+  - lyrics
+
 window:
   - editor
   - terminal
