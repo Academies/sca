@@ -51,51 +51,13 @@ button to get started.
 
 {% next %}
 
-#### 0. The Game Loop
+#### 0. Board Printing
 
-At the bottom of the file, the high-level game logic is implemented in
-a loop in `main`. Each turn is a single iteration of this loop. You
-can see that on each turn the board is printed, and the current
-player's input is processed. If the current player has won the final
-board is printed and the loop is broken, ending the game. Otherwise,
-if the current player did not win, the current player is switched and
-a new turn begins.
-
-At least, that's how it would work if all of the helper functions were
-correctly implemented. Your job is to implement those helper functions
-to make the game work.
-
-```
-current_player = 1
-while True:
-    # print game information
-    print_board()
-    print(f"Player {current_player}'s turn")
-
-    # take move
-    column = get_move()
-    did_win = make_move(current_player, column)
-
-    if did_win:
-        # current player won, so print winner and exit
-        print_board()
-        print(f"Player {current_player} wins!")
-        break
-
-    # switch current player
-    if current_player == 1:
-        current_player = 2
-    else:
-        current_player = 1
-```
-
-#### 1. Board Printing
-
-If you run the program, you will quickly see that the board is not
-very pretty. Your first task is to fix that by changing the
-implementation of `print_board`. Feel free to make the board look like
-anything you want, but you can use the layout below to as
-inspiration. The only requirement is that the board be pretty.
+If you play around with the board a little bit, you will quickly see
+that the board is not very pretty. Your first task is to fix that by
+changing the implementation of `print_board`. Feel free to make the
+board look like anything you want, but you can use the layout below to
+as inspiration. The only requirement is that the board be pretty.
 
 ```
 |1 2 3 4 5 6 7|
@@ -111,16 +73,66 @@ In this example layout Player 1's tokens are represented with `X`,
 Player 2's tokens are represented with `O`, and empty spaces are
 represented with `.`.
 
-#### 2. Validating Input
+Below is pseudocode describing how to print the example layout. Feel
+free to look at it if you get stuck!
 
-Next we need to be able to get input from the user. Right now the code
+{% spoiler "Pseudocode" %}
+
+```
+headers := list of numbers 1 to BOARD_WIDTH
+print vertical bars ("|") around header numbers joined by spaces
+for each row in the board:
+    tokens := empty list
+    for each column in the row:
+        if cell at row, column is None, then append "." to tokens
+        if cell at row, column is 1, then append "X" to tokens
+        if cell at row, column is 2, then append "O" to tokens
+    print vertical bars around strings in cells joined by spaces
+```
+
+Challenge: How can you make the code shorter by using this dict?
+
+```
+{None: ".", 1: "X", 2: "O"}
+```
+
+{% endspoiler %}
+
+Don't forget to test your implementation of `print_board` by adding
+tokens to the board and calling `print_board` in `main`!
+
+{% next %}
+
+#### 1. Validating Input
+
+Now that we can display the board, we need to let the users add their
+tokens to the board. The first step to do this is to get input from
+the user. The function for this is `get_move`. Right now `get_move`
 accepts any input, but we want the input to be validated, meaning bad
 input should be rejected. Valid input is any integer between 1 and
 `BOARD_WIDTH`, inclusive. The input identifies which column the user
 wants to drop a token into. If the user enters bad input, they should
 be repeatedly prompted until they enter valid input.
 
-#### 3. Updating The Board
+Add a call to `get_move` to `main` and implement input validation in `get_move`. When you are done, your program might look something like this:
+
+```
+$ python connect_four.py
+Enter a column number: abc123
+Invalid input. Enter a column number: 0
+Invalid input. Enter a column number: 10
+invalid input. Enter a column number: -1
+invalid input. Enter a column number: 3
+$
+```
+
+The messages can be whatever you want, but the important part is that
+the program keeps asking for input until a valid column number is
+given.
+
+{% next %}
+
+#### 2. Updating The Board
 
 Now that we can get correct input from the user, we need to be able to
 update the board accordingly. Go ahead and change the implementation
@@ -131,6 +143,59 @@ possible, so there should never be an empty space under a token. Don't
 worry about detecting wins yet; `make_move` should still just return
 `False` at this point.
 
+To test your implementation of `make_move`, place the following in the body of `main`:
+
+```
+column = get_move()
+make_move(1, column)
+print_board()
+```
+
+When you run the program you should be able to make a move and see
+that a token for Player 1 is placed at the bottom of the correct
+column.
+
+{% next %}
+
+#### 3. The Game Loop
+
+Now that we have the functionality in place for a player to make a
+move and see the results, it's time to implement the high-level logic
+of the game. Specifically, players should be able to alternate taking
+turns and seeing the results until someone wins. Don't worry that you
+haven't implemented win detection in `make_move` yet; for now just
+assume that it works as specified in `make_move`'s docstring and we
+will go back and implement it for real later.
+
+Implement the following pseudocode for the game logic in `main`. When
+you're done, you should be able to have two players alternate taking
+turns, with the board state being printed before each turn. The game
+will probably never end, since we haven't implemented that part yet,
+so to quit the program you will have to press `Control-C`.
+
+At the bottom of the file, the high-level game logic is implemented in
+a loop in `main`. Each turn is a single iteration of this loop. You
+can see that on each turn the board is printed, and the current
+player's input is processed. If the current player has won the final
+board is printed and the loop is broken, ending the game. Otherwise,
+if the current player did not win, the current player is switched and
+a new turn begins.
+
+```
+current player := 1
+repeat:
+    print the board
+    print a message saying whose turn it is
+    get input and make a move
+    if that was the winning move:
+        print the final board
+        print a message announcing the win
+        stop repeating and end program
+    otherwise switch the current player and repeat
+```
+
+{% next %}
+
 #### 4. Full Columns
 
 Yay! Users can now take turns making moves. However, what happens if a
@@ -138,6 +203,8 @@ user plays on a full column? Try it out and see what happens. Your
 code will probably either do nothing or crash. Neither result is what
 we want, so go back to `get_move` and add to the input validation a
 requirement that the chosen column is not full.
+
+{% next %}
 
 #### 5. Detecting Wins
 
@@ -149,15 +216,52 @@ diagonally. Implement your algorithm in `make_move`, returning `True`
 if the move was a winning move and `False` otherwise.
 
 This is the hardest part of this project, so we highly recommend that
-you work with your neighbors to figure out a working algorithm.
+you work with your neighbors to figure out a working algorithm. It
+would also be a good idea to write down the algorithm as pseudocode on
+paper before trying to implement it.
+
+If you are truly stuck, you can look at the pseudocode below, but do
+try to work with your neighbors to come up with an algorithm on your
+own first. A lot of the fun of programming is trying to come up with
+algorithms like this!
+
+{% spoiler "Pseudocode" %}
+
+```
+for direction in horizontal, vertical, diagonal left, and diagonal right:
+    adjacent_matches := 1
+    for each step in forward direction from move location
+            until we are off the board or see a different player's token:
+        adjacent_matches += 1
+    for each step in backward direction from move location
+            until we are off the board or see a different player's token:
+        adjacent_matches += 1
+    if adjacent matches >= 4, this is a winning move
+```
+
+The main idea is to move forward and backward along every possible win
+direction (horizontal, vertical, and both diagonals) from the location
+of the player's move, counting the number of adjacent identical tokens
+as we go. The trick is in how you represent directions. Think about
+how row numbers and column numbers change as you travel in each of
+these directions.
+
+{% endspoiler %}
+
+{% next %}
 
 #### 6. Handling Draws
 
 Unfortunately the code currently has no way of detecting when a game
 should be over because there are no more possible moves. Your final
-task is to fix this in any way you see fit. Unlike the other tasks,
-this one will require you to make changes to the game loop in `main`.
+task is to fix this in any way you see fit. This will require you to
+make changes to the game loop in `main`.
 
+{% next %}
+
+Congrats! You have a working command line version of Connect
+Four. Here are some optional bonus challenges to make the program more
+interesting and flexible.
 
 #### Bonus challenges
 
