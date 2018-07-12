@@ -1,0 +1,14 @@
+lab50:
+  file:
+    - lexicon.py
+    - lyrics/drake.txt
+    - lyrics/eminem.txt
+    - lyrics/jay-z.txt
+    - lyrics/jurassic 5.txt
+    - lyrics/kanye.txt
+    - lyrics/kendrick.txt
+    - lyrics/outkast.txt
+
+  window:
+    - editor
+    - terminal
