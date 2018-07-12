@@ -74,31 +74,25 @@ Player 2's tokens are represented with `O`, and empty spaces are
 represented with `.`.
 
 Below is pseudocode describing how to print the example layout. Feel
-free to look at it if you get stuck!
+free to use it if you get stuck on your own design!
 
-{% spoiler "simple!" %}
-hidden?
-{% endspoiler %}
-
-{% spoiler "Pseudocode" %}
-```
-headers := list of numbers 1 to BOARD_WIDTH
-print vertical bars ("|") around header numbers joined by spaces
-for each row in the board:
-    tokens := empty list
-    for each column in the row:
-        if cell at row, column is None, then append "." to tokens
-        if cell at row, column is 1, then append "X" to tokens
-        if cell at row, column is 2, then append "O" to tokens
-    print vertical bars around strings in cells joined by spaces
-```
-
-Challenge: How can you make the code shorter by using this dict?
-
-```
-{None: ".", 1: "X", 2: "O"}
-```
-{% endspoiler %}
+>```
+>headers := list of numbers 1 to BOARD_WIDTH
+>print vertical bars ("|") around header numbers joined by spaces
+>for each row in the board:
+>    tokens := empty list
+>    for each column in the row:
+>        if cell at row, column is None, then append "." to tokens
+>        if cell at row, column is 1, then append "X" to tokens
+>        if cell at row, column is 2, then append "O" to tokens
+>    print vertical bars around strings in cells joined by spaces
+>```
+>
+> Challenge: How can you make the code shorter by using this dict?
+> 
+> ```
+> {None: ".", 1: "X", 2: "O"}
+> ```
 
 Don't forget to test your implementation of `print_board` by adding
 tokens to the board and calling `print_board` in `main`!
@@ -222,12 +216,16 @@ you work with your neighbors to figure out a working algorithm. It
 would also be a good idea to write down the algorithm as pseudocode on
 paper before trying to implement it.
 
-If you are truly stuck, you can look at the pseudocode below, but do
-try to work with your neighbors to come up with an algorithm on your
-own first. A lot of the fun of programming is trying to come up with
-algorithms like this!
+If you are truly stuck, you can press the Next button to see
+pseudocode for a solution to this problem, but do try to work with
+your neighbors to come up with an algorithm on your own first. A lot
+of the fun of programming is trying to come up with algorithms like
+this!
 
-{% spoiler "Pseudocode" %}
+{% next %}
+
+Here's pseudocode for detecting wins:
+
 ```
 for direction in horizontal, vertical, diagonal left, and diagonal right:
     adjacent_matches := 1
@@ -246,7 +244,6 @@ of the player's move, counting the number of adjacent identical tokens
 as we go. The trick is in how you represent directions. Think about
 how row numbers and column numbers change as you travel in each of
 these directions.
-{% endspoiler %}
 
 {% next %}
 
