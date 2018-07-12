@@ -76,6 +76,10 @@ represented with `.`.
 Below is pseudocode describing how to print the example layout. Feel
 free to look at it if you get stuck!
 
+{% spoiler "simple!" %}
+hidden?
+{% endspoiler %}
+
 {% spoiler "Pseudocode" %}
 ```
 headers := list of numbers 1 to BOARD_WIDTH
