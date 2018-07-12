@@ -1,1 +1,5 @@
-lab50: true
+lab50:
+  file: 
+  window:
+    - editor
+    - terminal
