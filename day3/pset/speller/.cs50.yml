@@ -1,0 +1,14 @@
+lab50:
+  file:
+    - dictionary.py
+    - speller.py
+    - texts/aca.txt
+    - texts/birdman.txt
+    - texts/constitution.txt
+    - texts/frankenstein.txt
+    - texts/her.txt
+    - texts/lalaland.txt
+    - texts/shakespeare.txt
+  window:
+    - editor
+    - terminal
