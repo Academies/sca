@@ -262,11 +262,10 @@ interesting and flexible.
 
 #### Bonus challenges
 
-1. The distribution code uses four whole lines to switch the current
-   player at the end of the turn. Can you figure out how to switch
-   players with just one line of code?
+1. Switch the player at the end of the turn using a single line of
+   code without using an `if`.
 
-2. Make the game have 3 players instead of just two.
+2. Make the game have three players instead of just two.
 
 3. Take the size of the board and the number of players as command
    line arguments so they can be different each time the program is
@@ -285,4 +284,4 @@ interesting and flexible.
    ```
 
    This code uses list multiplication to create both the inner lists and
-   outer list. Does it work? Why or why not?
+   outer list. Does it work? Can you explain why or why not?
