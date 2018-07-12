@@ -54,7 +54,14 @@ def main():
 
 # Fills and returns a dict cotaining a set of words as keys and use count as valuesn for a given rapper file
 def fill_words(rapper):
-    # TODO
+
+    words = []
+
+    # Opens the file for each rapper
+    with open("lyrics/" + rapper, "r") as f:
+        words = f.read().split()
+
+    # TODO: 
 
 # Examines the number of times the rapper uses a user-inputted word and prints results to the screen
 def examine_rapper(rapperWords):

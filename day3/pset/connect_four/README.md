@@ -36,12 +36,13 @@ player whose token occupies that cell. The board is initialized to be
 completely empty.
 
 To see the board visualized, add a call to `print_board` in `main` and
-run the program. As you can see, the board is empty (all `None`). Add
+run the program. As you can see, the board is empty (all `None`). Temporarily, add
 a line like `board[0][0] = 1` before your call to `print_board`. You
 should now see that the board is no longer empty. Which board space is
 no longer empty? Play around and try to figure out how to place a
-token (1 or 2) in each corner of the board. Try to place four in a row
-horizontally, vertically, and diagonally.
+token (as the number 1 or 2) in each corner of the board. Try to place four in a row
+horizontally, vertically, and diagonally. Don't forget to remove this code after
+you are finished playing around with the board!
 
 ### Your Mission
 
@@ -71,7 +72,8 @@ as inspiration. The only requirement is that the board be pretty.
 
 In this example layout Player 1's tokens are represented with `X`,
 Player 2's tokens are represented with `O`, and empty spaces are
-represented with `.`.
+represented with `.`. Thus, if a 1 is on the board (meaning player 1 has played
+at that spot), we want to print out an `X` instead!
 
 Below is pseudocode describing how to print the example layout. Feel
 free to use it if you get stuck on your own design!
@@ -89,7 +91,7 @@ free to use it if you get stuck on your own design!
 >```
 >
 > Challenge: How can you make the code shorter by using this dict?
-> 
+>
 > ```
 > {None: ".", 1: "X", 2: "O"}
 > ```
