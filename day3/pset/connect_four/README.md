@@ -77,7 +77,6 @@ Below is pseudocode describing how to print the example layout. Feel
 free to look at it if you get stuck!
 
 {% spoiler "Pseudocode" %}
-
 ```
 headers := list of numbers 1 to BOARD_WIDTH
 print vertical bars ("|") around header numbers joined by spaces
@@ -95,7 +94,6 @@ Challenge: How can you make the code shorter by using this dict?
 ```
 {None: ".", 1: "X", 2: "O"}
 ```
-
 {% endspoiler %}
 
 Don't forget to test your implementation of `print_board` by adding
@@ -226,7 +224,6 @@ own first. A lot of the fun of programming is trying to come up with
 algorithms like this!
 
 {% spoiler "Pseudocode" %}
-
 ```
 for direction in horizontal, vertical, diagonal left, and diagonal right:
     adjacent_matches := 1
@@ -245,7 +242,6 @@ of the player's move, counting the number of adjacent identical tokens
 as we go. The trick is in how you represent directions. Think about
 how row numbers and column numbers change as you travel in each of
 these directions.
-
 {% endspoiler %}
 
 {% next %}
