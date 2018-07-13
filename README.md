@@ -1,3 +1,3 @@
-# CS50 Summer at HSA
+# SCA
 
-This is the teacher-facing home of CS50 Summer at HSA materials.
+This is the teacher-facing home of CSA materials.
