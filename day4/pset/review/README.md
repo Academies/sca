@@ -57,23 +57,7 @@ true
 
 {% next %}
 
-#### 3. Dictionary
-
-Write a **function** that takes a list of integers and returns true if the list is not in increasing order. Consecutive elements of the same value are allowed. To test, write a main function that calls this new function you created.
-
-For example:
-```
->> decreasing([1,2,3])
-false
->> decreasing([3,2,1])
-true
->> decreasing([5,2,2,2,1,1])
-true
-```
-
-{% next %}
-
-#### 4. Gridded
+#### 3. Gridded
 
 Write a program that takes in an integer between **1 and 9**, inclusive, for dimension and prints a square grid to the screen of that size. This square grid should have ascending integers in each spot on the grid like below:
 
@@ -103,7 +87,7 @@ What is the dimension of the grid? 1
 
 % next %}
 
-#### 5. Unzip
+#### 4. Unzip
 
 Imagine that you have a dictionary that represents a 'zipped' version of list. In other words, because there was repeats in the original list, it became nice to just store the number of times each value repeats.
 
