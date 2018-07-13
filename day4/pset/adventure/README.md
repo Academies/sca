@@ -7,7 +7,7 @@ Create a choose your own adventure game!
 
 Perhaps you've heard of the classic game *The Oregon Trail*? It's a classic game where you venture across the US to the promise land of the Willamette Valley (Portland, OR)! Along the way you need to make decisions that effect the outcome of the game.
 
-<img src="oregontrail.png" width="500">
+![oregontrail.png](oregontrail.png)
 
 We're going to focus on the text aspect of the *The Oregon Trail* and others like it and create a **choose your own adventure** game! This type of game goes way back. In fact, there used to be a series of <a href="https://en.wikipedia.org/wiki/Choose_Your_Own_Adventure" target="blank"> Choose Your Own Adventure</a> books in the 70s and 80s! Many games including **Heavy Rain** for the PS3 have continued this style of gameplay in a more "modern" way.
 
@@ -19,7 +19,7 @@ The idea is to print text to the screen dictating a story, then ask the user for
 
 You will likely have a "flow" to your story and questions similar to this:
 
-<img src="flow.png" width="750">
+![flow.png](flow.png)
 
 #### Specification
 
