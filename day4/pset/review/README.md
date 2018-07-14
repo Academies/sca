@@ -85,7 +85,7 @@ What is the dimension of the grid? 1
 | 1 |
 ```
 
-% next %}
+{% next %}
 
 #### 4. Unzip
 
