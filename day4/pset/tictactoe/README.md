@@ -24,7 +24,7 @@ grades = [91, 92, 87, 74, 95]
 
 If we want to know what the first element in this list is (remember that in computer science we tend to use 0 to indicate the first element, 1 to indicate the second element, etc.), we can print it like so:
 
-```
+```python
 # This will print 91
 print(grades[0])
 ```
@@ -64,7 +64,7 @@ The first element of `grades` here — `grades[0]` — is a list of numbers `[89
 
 When working with a list of lists, we tend to use nested loops. The first loop iterates through the row number, the second loop runs through the elements inside of a row. For example, this is how we might print the contents of a 2D numerical list on the screen line by line, separating the numbers with spaces:
 
-```
+```python
 a = [[1, 2, 3, 4], [5, 6], [7, 8, 9]]
 for i in range(len(a)):
     for j in range(len(a[i])):
@@ -89,7 +89,7 @@ Open up `helpers.py` and on line 34, you'll see the below:
 
 In Python, this is known as a list comprehension, which is a very pythonic and concise way of creating lists. The other square brackets contain an expression follow by a for clause, which essentially resembles a shorthand for the for loop itself. The below list comprehension and for loop both achieve the same thing, creating the list `[0, 1, 2]`:
 
-```
+```python
 new_list = [i for i in range(3)]
 
 new_list = []
