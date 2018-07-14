@@ -12,7 +12,7 @@ Welcome to the classic and simple game of [Tic-Tac-Toe](https://en.wikipedia.org
 
 ![grid](grid.png)
 
-If you're familiar with the game, you'll know that there are strategies you can follow that ensure you always win the game (or that at least you [never lose!](https://www.quora.com/Is-there-a-way-to-never-lose-at-Tic-Tac-Toe])). You'll get enough time to practice such strategies when you've finished implementing our incomplete version of Tic-Tac-Toe, for which we've provided you with some initial code, but we're hoping you can help up finish it up! We're going to do using Python to complete the game! First, we're going to familiarize ourselves with some data structures, including **lists** and **dictionaries**.
+If you're familiar with the game, you'll know that there are strategies you can follow that ensure you always win the game (or that at least you [never lose!](https://www.quora.com/Is-there-a-way-to-never-lose-at-Tic-Tac-Toe)). You'll get enough time to practice such strategies when you've finished implementing our incomplete version of Tic-Tac-Toe, for which we've provided you with some initial code, but we're hoping you can help up finish it up! We're going to do using Python to complete the game! First, we're going to familiarize ourselves with some data structures, including **lists** and **dictionaries**.
 
 ### Lists
 
