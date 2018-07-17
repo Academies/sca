@@ -8,7 +8,3 @@ lab50:
     - lyrics/kanye.txt
     - lyrics/kendrick.txt
     - lyrics/outkast.txt
-
-  window:
-    - editor
-    - terminal

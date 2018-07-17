@@ -9,6 +9,3 @@ lab50:
     - texts/her.txt
     - texts/lalaland.txt
     - texts/shakespeare.txt
-  window:
-    - editor
-    - terminal

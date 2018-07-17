@@ -3,6 +3,3 @@ lab50:
     - asteroids.py
   #   - assets/ship.png
   #   - assets/asteroid.png
-  window:
-    - editor
-    - terminal

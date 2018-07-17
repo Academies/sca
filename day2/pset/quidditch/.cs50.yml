@@ -1,7 +1,3 @@
 lab50:
   file:
     - quidditch.py
-
-  window:
-    - editor
-    - terminal
