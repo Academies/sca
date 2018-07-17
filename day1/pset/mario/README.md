@@ -34,7 +34,7 @@ We're going to create a program that prints out this same shape. However, we're 
 
 ## Help from CS50's own Zamyla Chan
 
-{% video https://www.youtube.com/embed/gqS876f0lk0 %}
+{% video https://www.youtube.com/embed/gqS876f0lk0?start=50&end=100 %}
 
 ## Check Your Work
 
