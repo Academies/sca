@@ -46,12 +46,10 @@ index 1, and so on.
 > elements?
 >
 > {% spoiler "Answer" %}
->
 > If a list has 5 elements, the index of the last element is 4. The
 > five indices are 0, 1, 2, 3, 4. For 10 elements the last index is 9
 > and for 100 elements the last index is 99. In general, for *n*
 > elements, the last index is *n*-1.
->
 > {% endspoiler %}
 
 Another thing we can do with a list is *append* to it, or add
@@ -95,11 +93,9 @@ element.
 > Is a list with a single element in decreasing order?
 > 
 > {% spoiler "Answer" %}
->
 > Yes, because it has no element besides its last element, so nothing
 > is required to be greater or equal to anything else for it to be
 > decreasing.
->
 > {% endspoiler %}
 
 

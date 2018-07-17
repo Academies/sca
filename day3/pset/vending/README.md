@@ -8,7 +8,7 @@ Create a vending machine class!
 
 #### So Thirsty
 
-![Thirsty Spongebob](thirsty.png)
+![Thirsty Spongebob](thirsty.jpg)
 
 Scene: It's a hot summer day on the streets of Japan and you find yourself feeling a bit thirsty. No worries! There's bound to be a vending machine nearby on the street somewhere. That's just how Japan rolls.
 
