@@ -11,7 +11,7 @@ Perhaps you've heard of the classic game *The Oregon Trail*? It's a classic game
 
 We're going to focus on the text aspect of the *The Oregon Trail* and others like it and create a **choose your own adventure** game! This type of game goes way back. In fact, there used to be a series of <a href="https://en.wikipedia.org/wiki/Choose_Your_Own_Adventure" target="blank"> Choose Your Own Adventure</a> books in the 70s and 80s! Many games including **Heavy Rain** for the PS3 have continued this style of gameplay in a more "modern" way.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/hRR-ssPdmWY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+{% video https://www.youtube.com/embed/hRR-ssPdmWY %}
 
 ### Your Mission
 

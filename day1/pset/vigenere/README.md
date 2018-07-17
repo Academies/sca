@@ -54,7 +54,7 @@ Design and implement a program that encrypts messages using Vigenère's cipher.
 
 Ignore the first minute or so, but this should help get you started.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/n4gcWaHKhoU?start=52" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+{% video https://www.youtube.com/embed/n4gcWaHKhoU?start=52 %}
 
 ## Testing
 
