@@ -48,12 +48,12 @@ def main():
         if rapper == 'quit':
             break
         elif rapper in rappers:
-            examine_rapper(rappers[rapper])
+            examine_rapper(rappers[rapper], rapper)
         else:
             print("Invalid rapper!")
 
 # Fills and returns a dict cotaining a set of words as keys and use count as valuesn for a given rapper file
-def fill_words(rapper):
+def fill_words(rapper_dict, name):
 
     words = []
 
@@ -61,7 +61,7 @@ def fill_words(rapper):
     with open("lyrics/" + rapper, "r") as f:
         words = f.read().split()
 
-    # TODO: 
+    # TODO:
 
 # Examines the number of times the rapper uses a user-inputted word and prints results to the screen
 def examine_rapper(rapperWords):
