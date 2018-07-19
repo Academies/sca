@@ -48,7 +48,7 @@ def main():
         if rapper == 'quit':
             break
         elif rapper in rappers:
-            examine_rapper(rappers[rapper])
+            examine_rapper(rappers[rapper], rapper)
         else:
             print("Invalid rapper!")
 
@@ -64,10 +64,10 @@ def fill_words(rapper):
     return word_usage
 
 # Examines the number of times the rapper uses a user-inputted word
-def examine_rapper(rapper):
+def examine_rapper(rapper_dict, name):
     word = input("Type a word the rapper uses: ")
-    if word in rapper:
-        print("%s: %s uses by %s" % (word, rapper[word], rapper))
+    if word in rapper_dict:
+        print("%s: %s uses by %s" % (word, rapper_dict[word], name))
     else:
         print("No uses of %s!" % word)
 
