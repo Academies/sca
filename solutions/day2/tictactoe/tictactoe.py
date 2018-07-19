@@ -17,12 +17,12 @@ def print_board(board):
 def winner(board):
     """ Determines whether game has been won """
     for row in range(0,3):
-        if ((board[row][0] == board[row][1] and board[row][0] == board[row][2]) or
-            (board[0][row] == board[1][row] and board[0][row] == board[2][row])):
+        if ((board[row][0] == board[row][1] == board[row][2]) or
+            (board[0][row] == board[1][row] == board[2][row])):
             return True
 
-    if ((board[0][0] == board[1][1] and board[0][0] == board[2][2]) or
-        (board[0][2] == board[1][1] and board[0][2] == board[2][0])):
+    if ((board[0][0] == board[1][1] == board[2][2]) or
+        (board[0][2] == board[1][1] == board[2][0])):
         return True
 
     return False

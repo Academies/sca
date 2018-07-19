@@ -64,10 +64,10 @@ def fill_words(rapper):
     return word_usage
 
 # Examines the number of times the rapper uses a user-inputted word
-def examine_rapper(rapper, rappers):
+def examine_rapper(rapper):
     word = input("Type a word the rapper uses: ")
-    if word in rappers[rapper]:
-        print("%s: %s uses by %s" % (word, rappers[rapper][word], rapper))
+    if word in rapper:
+        print("%s: %s uses by %s" % (word, rapper[word], rapper))
     else:
         print("No uses of %s!" % word)
 
