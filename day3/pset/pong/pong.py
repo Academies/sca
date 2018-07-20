@@ -24,6 +24,7 @@ PAD_HEIGHT = 100
 
 # Initial setup
 pygame.init()
+pygame.display.init()
 screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT), 0, 32)
 surface = pygame.Surface(screen.get_size()).convert()
 clock = pygame.time.Clock()
