@@ -53,7 +53,7 @@ def main():
             print("Invalid rapper!")
 
 # Fills and returns a dict cotaining a set of words as keys and use count as valuesn for a given rapper file
-def fill_words(rapper_dict, name):
+def fill_words(rapper):
 
     words = []
 
