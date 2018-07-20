@@ -64,7 +64,7 @@ def fill_words(rapper_dict, name):
     # TODO:
 
 # Examines the number of times the rapper uses a user-inputted word and prints results to the screen
-def examine_rapper(rapperWords):
+def examine_rapper(rapperWords, rappername):
     # TODO
 
 if __name__ == '__main__':
