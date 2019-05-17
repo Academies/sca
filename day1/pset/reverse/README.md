@@ -2,7 +2,7 @@
 
 ## Background
 
-To solidify for strings and indexing, we're going to create a program that reverses a string.
+To solidify for loops, strings, and indexing, we're going to create a program that reverses a string.
 
 ## Your Mission
 Create a program called `reverse.py` that asks the user for a string. Then, use a for loop to go through each character of the string in reverse order and add each character to a new string. Then, print the contents of the new string.
