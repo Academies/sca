@@ -1,5 +1,1 @@
-lab50:
-  file:
-    - asteroids.py
-  #   - assets/ship.png
-  #   - assets/asteroid.png
+lab50: true
