@@ -26,16 +26,16 @@ We're going to create a program that prints out this same shape. However, we're 
 
 ## Specification
 
-- Write a program that recreates these half-pyramids using hashes (`#`) for blocks.
-- To make things more interesting, first prompt the user for the half-pyramid's height, a non-negative integer no greater than `23`. (The height of the half-pyramids pictured above happens to be `4`, the width of each half-pyramid `4`, with an a gap of size `2` separating them.)
+- Write a program that recreates this half-pyramid using hashes (`#`) for blocks.
+- To make things more interesting, first prompt the user for the half-pyramid's height, a non-negative integer no greater than `23`. (The height of the half-pyramid pictured above happens to be `8`.)
 - If the user fails to provide a non-negative integer no greater than `23`, you should re-prompt for the same again.
-- Then, generate (with the help of `printf` and one or more loops) the desired half-pyramid.
-- Take care to left-align the bottom-left corner of the left-hand half-pyramid with the left-hand edge of your terminal window.
+- Then, generate (with the help of `print` and one or more loops) the desired half-pyramid.
+- Take care to align the bottom-left corner of your half-pyramid with the left-hand edge of your terminal window.
 
 ## Help from CS50's own Zamyla Chan
 
-{% video https://www.youtube.com/embed/gqS876f0lk0 %}
+{% video https://www.youtube.com/embed/syt3NZhllwc %}
 
 ## Check Your Work
 
-To check your work run `check50 cs50/2017/ap/sentimental/mario/more`
+To check your work run `check50 cs50/2017/ap/sentimental/mario/less`
