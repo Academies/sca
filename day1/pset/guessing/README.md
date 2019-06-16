@@ -4,10 +4,6 @@
 
 Create a guessing game that contains a loop so that a user can keep playing until they guess correctly!
 
-## Background
-
-Remember that guessing game example from day 0? We're gonna make it better!
-
 ## Your Mission
 Create a program called `guessing.py` asks the user to guess a randomly generated number from 1 to 100 (`random.randint()` could come in handy!). If the user guesses too high, too low, or gets it, let the user know with print statements like below! Of course, if the user gets it right, be sure to end the while loop that is making the game continue on!
 
