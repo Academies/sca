@@ -1,4 +1,8 @@
 lab50:
+  window:
+    - editor
+    - readme
+    - terminal
   files:
     - include! lexicon.py
     - include! lyrics/drake.txt
