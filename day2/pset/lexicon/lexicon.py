@@ -1,7 +1,7 @@
 """
 Rap Lexicon
 Spencer L Tiberi
-CS50 at HSA, July 2018
+SCA 1, July 2018
 """
 import os
 
