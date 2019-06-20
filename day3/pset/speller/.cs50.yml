@@ -1,5 +1,5 @@
 lab50:
-  file:
+  files:
     - dictionary.py
     - speller.py
     - texts/aca.txt
