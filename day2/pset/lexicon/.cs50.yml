@@ -1,10 +1,10 @@
 lab50:
   files:
-    - lexicon.py
-    - lyrics/drake.txt
-    - lyrics/eminem.txt
-    - lyrics/jay-z.txt
-    - lyrics/jurassic 5.txt
-    - lyrics/kanye.txt
-    - lyrics/kendrick.txt
-    - lyrics/outkast.txt
+    - include! lexicon.py
+    - include! lyrics/drake.txt
+    - include! lyrics/eminem.txt
+    - include! lyrics/jay-z.txt
+    - include! lyrics/jurassic 5.txt
+    - include! lyrics/kanye.txt
+    - include! lyrics/kendrick.txt
+    - include! lyrics/outkast.txt
