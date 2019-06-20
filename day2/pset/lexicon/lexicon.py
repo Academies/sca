@@ -41,7 +41,7 @@ def main():
               max(rappers[rapper_name], key=len), max(rappers[rapper_name], \
               key=rappers[rapper_name].get)))
 
-    # TODO: Add comment
+    # TODO: Add comment describing the following 8 lines of code
     while True:
         rapper = input("Choose a rapper to further examine (or type 'quit'): ")
 
@@ -52,7 +52,7 @@ def main():
         else:
             print("Invalid rapper!")
 
-# Fills and returns a dict cotaining a set of words as keys and use count as valuesn for a given rapper file
+# Fills and returns a dict cotaining a set of words as keys and use count as values for a given rapper file
 def fill_words(rapper):
 
     words = []
@@ -60,8 +60,10 @@ def fill_words(rapper):
     # Opens the file for each rapper
     with open("lyrics/" + rapper, "r") as f:
         words = f.read().split()
+        # TODO: Create a dictionary of words
 
-    # TODO:
+    # TODO: Replace the code below and return a dictionary of words
+    return {}
 
 # Examines the number of times the rapper uses a user-inputted word and prints results to the screen
 def examine_rapper(rapperWords, rappername):
