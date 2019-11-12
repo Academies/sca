@@ -2,7 +2,7 @@
 
 ## TL;DR
 
-Create a program that converts a temperature in Fahrenheit into Celsius.
+Create a program that converts a temperature in Celsius into Fahrenheit.
 
 ## Background
 
